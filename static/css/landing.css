@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(25,25,25);
+  color: white;
+  font-family: 'Catamaran', sans-serif;
+  height: 100%;
+  margin: 0px;
+}
+
+form {
+  width: 25%;
+}
+
+form input {
+  width: 100%;
+  text-align: center;
+  outline: none;
+  border: 5px solid white;
+  background-color: rgb(25,25,25);
+  height: 50px;
+  color: white;
+  border-radius: 25px;
+}
+
+button {
+  width: 10%;
+  border: none;
+  height: 25px;
+  border-radius: 25px;
+  cursor: pointer;
+}

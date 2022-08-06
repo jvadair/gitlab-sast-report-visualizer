@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>SAST report visualizer</title>
+    <link rel="stylesheet" href="/static/css/landing.css">
+</head>
+<body>
+<h1>Enter your GitLab project's path:</h1>
+<form onkeydown="return event.key != 'Enter';">
+    <input id='loc' type="text" placeholder="Ex: jvadair/sast-report-visualizer">
+</form>
+<button onclick="window.location.href = '/view/' + document.getElementById('loc').value">Go</button>
+</body>
+</html>

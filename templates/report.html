@@ -1,0 +1,15 @@
+<html>
+<head>
+    <title>Security report for {{ name }}</title>
+    <link rel="stylesheet" href="/static/css/report.css">
+</head>
+<body>
+<h1>Security report for {{ name }}</h1>
+{% for item in vulnerabilities %}
+<div class="vulnerability {{ item['severity'] }}">
+    <p class="location">{{ item['location']['file'] }}, line {{ item['location']['start_line'] }}</p>
+    <a href="{{ item['url'] }}" class="message"><p>{{ item['message'] }}</p></a>
+</div>
+{% endfor %}
+</body>
+</html>

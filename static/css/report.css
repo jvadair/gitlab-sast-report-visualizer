@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(25,25,25);
+  color: white;
+  font-family: 'Catamaran', sans-serif;
+}
+
+.vulnerability {
+  display: flex;
+  grid-gap: 10px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.vulnerability p:not(.location) {
+  border-left: 2px solid white;
+  padding-left: 10px;
+}
+
+.vulnerability a {
+  color: white;
+}
+
+.Low {
+  background-color: rgba(25,25,50,0.5);
+}
+
+.Medium {
+  background-color: rgba(100,50,25,0.5);
+}
+
+.High {
+  background-color: rgba(150,50,25,0.5);
+}
+
+.Critical {
+  background-color: rgba(255,50,25,0.5);
+}
